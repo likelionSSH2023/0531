@@ -1,0 +1,57 @@
+/* 마진과 패팅을 없애고, 모두 border-box로 바꿔주는 코드*/
+*{
+    /* border:solid 2px red; */
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.container{
+    border:solid 2px black;
+    display: flex;
+    flex-direction: column;
+
+}
+.item{
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    
+}
+
+.button{
+    border: solid 1px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    background-color: lightgrey;
+}
+.sign{
+    background-color: gray;
+}
+.answer{
+    background-color: black;
+    color:white
+}
+
+.zero{
+    width:80px;
+}
+
+.erase{
+    width:120px;
+    background-color: orange;
+}
